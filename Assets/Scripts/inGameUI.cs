@@ -128,6 +128,4 @@ public class inGameUI : MonoBehaviour
             PauseTitle.text = "Want to ESCAPE ?";
         }
     }
-    
-    // rescue me.
 }
