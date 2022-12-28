@@ -14,7 +14,6 @@ public class PlayerControl : MonoBehaviour
     public Transform firePoint2;
     public Transform firePoint3;
     public GameObject bullet;
-    private bool isKeepShooting = false;
 
     private Animator animator;
 
@@ -27,11 +26,11 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
-        PlayerMove();
+        Move();
         FireControll();
     }
 
-    public void PlayerMove()
+    public void Move()
     {
         GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
 
@@ -78,12 +77,13 @@ public class PlayerControl : MonoBehaviour
 
     void FireControll()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyUp(KeyCode.A))
         {
             animator.SetTrigger("Attack");
             Invoke("Fire", 0.5f);        
         }
     }
+
     void Fire()
     {
         Instantiate(bullet, firePoint1.transform.position,transform.rotation);

@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 5f;
     public float atk = 30f;
-    float lifeTime = 0;
+    float lifeTime = 0f;
     private Rigidbody rb;
 
     void Start()
@@ -18,7 +18,7 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         lifeTime += Time.deltaTime;
-        if (lifeTime > 3)
+        if (lifeTime > 3f)
         {
             Destroy(gameObject);
         }
