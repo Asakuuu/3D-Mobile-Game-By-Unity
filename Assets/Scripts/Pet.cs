@@ -104,8 +104,4 @@ public class Pet : MonoBehaviour
         }
         
     }
-
-    // why we call it kidnapped
-    // rescue me
-
 }

@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  atk: 50
+  atk: 30
 --- !u!54 &7887740421481487250
 Rigidbody:
   m_ObjectHideFlags: 0

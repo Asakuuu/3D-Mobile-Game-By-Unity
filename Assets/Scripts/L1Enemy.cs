@@ -103,6 +103,4 @@ public class L1Enemy : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    // ;(
 }
