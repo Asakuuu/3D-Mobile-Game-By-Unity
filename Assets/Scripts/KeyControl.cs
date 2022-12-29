@@ -47,7 +47,7 @@ public class KeyControl : MonoBehaviour
      {
          isPause = !isPause;
          Time.timeScale = 1;
-         SceneManager.LoadScene(0);
+         SceneManager.LoadScene(9);
      }
      
     void Start()
