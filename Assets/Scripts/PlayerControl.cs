@@ -137,7 +137,7 @@ public class PlayerControl : MonoBehaviour
     }
     void Dead()
     {
-        SceneManager.LoadScene("Dead");
+        SceneManager.LoadScene("EnemyDead");
     }
 }
 

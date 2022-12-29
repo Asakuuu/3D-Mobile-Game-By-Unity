@@ -15,7 +15,7 @@ public class GameControl : MonoBehaviour
          PauseGame();
      }
 
-     public void BacktoGame()
+    public void BacktoGame()
      {
         PauseWindow.gameObject.SetActive(false);
         Canvas.gameObject.SetActive(true);
@@ -60,28 +60,7 @@ public class GameControl : MonoBehaviour
         Debug.Log(enemyCount);
         if (enemyCount == 0)
         {
-            SceneManager.LoadScene("End");
-            /* if (SceneManager.GetActiveScene().buildIndex == 4)
-             {
-                 SceneManager.LoadScene(5);
-             }
-             else
-             {
-                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-             }*/
-        }
-
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            if (SceneManager.GetActiveScene().buildIndex == 4)
-            {
-                SceneManager.LoadScene(5);
-            }
-            else
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
+            SceneManager.LoadScene("Not End");
         }
     }
-
 }

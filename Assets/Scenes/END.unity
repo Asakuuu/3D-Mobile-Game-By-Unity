@@ -835,7 +835,6 @@ GameObject:
   - component: {fileID: 621521509}
   - component: {fileID: 621521506}
   - component: {fileID: 621521507}
-  - component: {fileID: 621521508}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -870,7 +869,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 621521493}
   selectedCommands:
-  - {fileID: 621521505}
+  - {fileID: 621521506}
   variables: []
   description: 
   stepPause: 0
@@ -908,7 +907,6 @@ MonoBehaviour:
   eventHandler: {fileID: 621521498}
   commandList:
   - {fileID: 621521509}
-  - {fileID: 621521508}
   - {fileID: 621521507}
   - {fileID: 621521506}
   - {fileID: 621521505}
@@ -1052,34 +1050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 28
   indentLevel: 0
-  storyText: "\u7E3D\u4E4B \u8B1D\u8B1D\u4F60\u5566\uFF01"
-  description: 
-  character: {fileID: 129531562}
-  portrait: {fileID: 21300000, guid: 60f1a1c4aced81c4b90dd64e9585e9c7, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 865213901}
---- !u!114 &621521508
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621521490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 29
-  indentLevel: 0
-  storyText: "\u5E0C\u671B\u4E0B\u6B21\u51FA\u9580\u6211\u4E0D\u8981\u518D\u8FF7\u8DEF\u4E86QwQ"
+  storyText: "\u90A3\u7E3D\u4E4B\u5C31\u662F\u8B1D\u8B1D\u4F60\u5566\uFF01"
   description: 
   character: {fileID: 129531562}
   portrait: {fileID: 21300000, guid: 60f1a1c4aced81c4b90dd64e9585e9c7, type: 3}
@@ -1106,7 +1077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 26
   indentLevel: 0
-  storyText: "\u597D\u311F~ \u611F\u8B1D\u4F60\u5E36\u6211\u56DE\u5BB6"
+  storyText: "\u597D\u311F~ \u611F\u8B1D\u4F60\u5E36\u6211\u56DE\u5BB6\u9084\u5E6B\u6211\u627E\u9470\u5319\u311FQQ"
   description: 
   character: {fileID: 129531562}
   portrait: {fileID: 21300000, guid: 60f1a1c4aced81c4b90dd64e9585e9c7, type: 3}

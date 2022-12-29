@@ -10,6 +10,7 @@ TagManager:
   - Tree
   - Dead
   - Death
+  - Rock
   layers:
   - Default
   - TransparentFX

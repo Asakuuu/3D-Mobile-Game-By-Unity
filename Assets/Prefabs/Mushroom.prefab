@@ -81,6 +81,7 @@ MonoBehaviour:
   heart3: {fileID: 6425473060376639895, guid: 1ffd9e9ae06d16041a93c05c95d8bf8f, type: 3}
   audioSource: {fileID: 1933828439356127368}
   hittedSound: {fileID: 8300000, guid: b8e203f42861b2e4b96f91b83373ecf8, type: 3}
+  deadSound: {fileID: 8300000, guid: bc4e86e1c3b81394398d65693071683d, type: 3}
 --- !u!95 &919132147896143509
 Animator:
   serializedVersion: 4

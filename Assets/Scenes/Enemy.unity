@@ -1441,7 +1441,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.18473102, y: 0.000000018951537, z: -0.0000000035622458, w: 0.98278916}
+  m_LocalRotation: {x: 0.18473102, y: 0.000000018906226, z: -0.0000000035537289, w: 0.98278916}
   m_LocalPosition: {x: -4.06, y: 5.99, z: -5.7799997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1984,7 +1984,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102850626}
-  m_LocalRotation: {x: -0, y: -5.363176e-11, z: 2.0901279e-11, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2367,12 +2367,12 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.3679245, g: 0.12669098, b: 0.12669098, a: 1}
+    m_NormalColor: {r: 0.9921569, g: 0.9686275, b: 0.69411767, a: 1}
+    m_HighlightedColor: {r: 0.6226415, g: 0.26139194, b: 0.26139194, a: 1}
     m_PressedColor: {r: 1, g: 0.97647065, b: 0.69803923, a: 1}
     m_SelectedColor: {r: 0.6792453, g: 0.27233893, b: 0.27233893, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 0}
-    m_ColorMultiplier: 5
+    m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
@@ -2415,7 +2415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3403,6 +3403,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1933828439356127368, guid: 972cee1b46db03c468f4dca7c8ba3c82, type: 3}
+      propertyPath: m_Volume
+      value: 0.63
+      objectReference: {fileID: 0}
     - target: {fileID: 4922566819469478694, guid: 972cee1b46db03c468f4dca7c8ba3c82, type: 3}
       propertyPath: m_Radius
       value: 0.74
@@ -3434,7 +3438,7 @@ PrefabInstance:
     - target: {fileID: 5904726823623709731, guid: 972cee1b46db03c468f4dca7c8ba3c82, type: 3}
       propertyPath: deadSound
       value: 
-      objectReference: {fileID: 8300000, guid: 11ba822a6f840c5409ba2f6034ef5826, type: 3}
+      objectReference: {fileID: 8300000, guid: bc4e86e1c3b81394398d65693071683d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 972cee1b46db03c468f4dca7c8ba3c82, type: 3}
 --- !u!4 &543450651612255275 stripped

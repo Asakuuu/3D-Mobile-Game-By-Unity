@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour
     
     public void ButtonStart()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 
     public void ButtonSettings()
@@ -38,7 +38,7 @@ public class MainMenu : MonoBehaviour
     }
     public void ButtonQuit()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(2);
     }
     public void Button_Quit()
     {

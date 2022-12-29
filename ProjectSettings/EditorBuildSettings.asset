@@ -12,30 +12,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Settings.unity
     guid: 15f7fa00a5ba6104a9c9c8f11d120917
   - enabled: 1
-    path: Assets/Scenes/Enemy.unity
-    guid: 6ae741c50279ed94385700ad4ff40941
-  - enabled: 1
-    path: Assets/Scenes/End.unity
-    guid: 80f0ff9595e9f4e438d5da7c1a6410fe
-  - enabled: 1
     path: Assets/Scenes/MainMenu 1.unity
     guid: c63865a69033c8349a4ecf1090275eee
   - enabled: 1
-    path: Assets/Scenes/Dead.unity
+    path: Assets/Scenes/PreEnemy.unity
+    guid: d4bd8114f614f2044a335bde03a35a69
+  - enabled: 1
+    path: Assets/Scenes/Enemy.unity
+    guid: 6ae741c50279ed94385700ad4ff40941
+  - enabled: 1
+    path: Assets/Scenes/EnemyDead.unity
     guid: 4d5ee2efaa78ebf4bbf657dcdc6302ea
-  - enabled: 0
-    path: Assets/Scenes/TEST.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/Level-3.unity
-    guid: 6ef4f715e81f4cb4daa6dc3ce35df43a
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/Level-2.unity
-    guid: 03f34e72b5d2c3849843a5ea21e7f76e
+  - enabled: 1
+    path: Assets/Scenes/Not End.unity
+    guid: 506de48390169224c9a5d77e5f48a638
+  - enabled: 1
+    path: Assets/Scenes/Key.unity
+    guid: ad25b9577f723d94e813bc66837ddf4c
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 80f0ff9595e9f4e438d5da7c1a6410fe
   m_configObjects: {}
