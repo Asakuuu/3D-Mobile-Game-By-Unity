@@ -20,7 +20,6 @@ public class Gaming : MonoBehaviour
 
     private void esc_to_close()
     {
-        //esc = close
         if(Input.GetKeyDown(KeyCode.Escape))
         {
 #if UNITY_EDITOR

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -15,8 +16,15 @@ public class PlayerControl : MonoBehaviour
     public Transform firePoint3;
     public GameObject bullet;
 
-    private Animator animator;
+    public GameObject heart1;
+    public GameObject heart2;
+    public GameObject heart3;
+    int heartNum = 3;
 
+    private Animator animator;
+    public AudioSource audioSource;
+    public AudioClip hittedSound;
+    public AudioClip deadSound;
 
     void Start()
     {
@@ -27,6 +35,7 @@ public class PlayerControl : MonoBehaviour
     void Update()
     {
         Move();
+
         FireControll();
     }
 
@@ -75,6 +84,12 @@ public class PlayerControl : MonoBehaviour
         cc.Move(dir * speed * Time.deltaTime);
     }
 
+    public void Button_Attack()
+    {
+        animator.SetTrigger("Attack");
+            Invoke("Fire", 0.5f);
+    }
+
     void FireControll()
     {
         if (Input.GetKeyUp(KeyCode.A))
@@ -86,9 +101,43 @@ public class PlayerControl : MonoBehaviour
 
     void Fire()
     {
+        audioSource.Play();
         Instantiate(bullet, firePoint1.transform.position,transform.rotation);
         Instantiate(bullet, firePoint2.transform.position,transform.rotation);
         Instantiate(bullet, firePoint3.transform.position,transform.rotation);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Death")
+        {
+            animator.SetTrigger("Dead");
+            audioSource.PlayOneShot(deadSound);
+            Invoke("Dead", 1f);
+        }
+        
+        if(other.tag == "Dead")
+        {
+            Debug.Log("Hit");
+            animator.SetTrigger("Hit");
+            audioSource.PlayOneShot(hittedSound);
+            heartNum--;
+            if (heartNum == 2)
+            heart1.SetActive(false);
+            else if (heartNum == 1)
+            heart2.SetActive(false);
+            else if (heartNum == 0)
+            {
+                heart3.SetActive(false);
+                audioSource.PlayOneShot(deadSound);
+                animator.SetTrigger("Dead");       
+                Invoke("Dead", 1f);
+            }
+        }
+    }
+    void Dead()
+    {
+        SceneManager.LoadScene("Dead");
     }
 }
 

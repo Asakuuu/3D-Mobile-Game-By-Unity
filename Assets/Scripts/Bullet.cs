@@ -18,7 +18,7 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         lifeTime += Time.deltaTime;
-        if (lifeTime > 3f)
+        if (lifeTime > 1.5f)
         {
             Destroy(gameObject);
         }
@@ -27,6 +27,11 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Enemy")
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        if (other.tag == "Tree")
         {
             gameObject.SetActive(false);
             Destroy(gameObject);

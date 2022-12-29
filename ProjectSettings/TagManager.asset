@@ -4,10 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Shootable
   - Enemy
   - Bullet
   - Floor
+  - Tree
+  - Dead
+  - Death
   layers:
   - Default
   - TransparentFX
