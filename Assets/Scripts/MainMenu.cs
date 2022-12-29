@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour
     
     public void ButtonStart()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(1);
         inGameUI.guilty = 0;
     }
 
@@ -37,18 +37,17 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-
-    public void ButtonExit()
+    public void ButtonQuit()
     {
-#if UNITY_EDITOR
+        SceneManager.LoadScene(3);
+    }
+    public void Button_Quit()
+    {
+        #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
 #else
             Application.Quit();
 #endif
-    }
-
-    public void ButtonBack()
-    {
-        SceneManager.LoadScene(0);
+Application.Quit();
     }
 }
